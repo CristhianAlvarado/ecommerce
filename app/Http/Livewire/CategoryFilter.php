@@ -12,6 +12,8 @@ class CategoryFilter extends Component
     use WithPagination;
     public $category, $subcategoria, $marca;
 
+    public $view = "grid";
+
     public function limpiar()
     {
         $this->reset(['subcategoria','marca']);
